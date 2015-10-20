@@ -1,0 +1,21 @@
+<script id="popup_template" type="text/x-template">
+  <div id="javit_popup">
+    <div id="javit_close">X</div>
+    <div class="popup_content_bounder">
+        <div id="javit_popup_content">
+            <ul>
+            {{each data}}
+                <li>
+                <div class="word">${word}${phonetic}</div>
+                <div class="meaning">
+                {{each means}}
+                    ${mean},
+                {{/each}}
+                </div>
+                </li>
+            {{/each}}
+            </ul>
+        </div>
+    </div>
+  </div>
+</script>
